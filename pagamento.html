@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: white;
+
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+        background-image: url(fundoGalo.jpg_large);
+    }
+    .imagem{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    .imagem img{
+        width: 90%;
+    }
+    .form{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .input{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        padding: 50px 0;
+        margin-bottom: 40px;
+    }
+    .input-box{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+        width: 300px;
+    }
+       
+    .input-box input{
+        margin: 5px 0;
+        padding: 20px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 1px 1px 6px;
+    }
+    
+    .grupo-pagamento{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        width: 100%;
+        
+    }
+    .botao button{
+        width: 100%;
+        margin-top: 60px;
+        border:none;
+        padding: 20px;
+        border-radius: 15px;
+        background-color: darkgoldenrod;
+    }
+    .botao button a{
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 100%;
+        color: black;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .inputs-pagamento{
+        margin-top: 20px;
+    }
+
+</style>
+<body>
+    
+    <div class="container"> 
+        <div class="imagem">
+            <img src="galoDoido.jpg_large">
+        </div>
+        <div class="form"> <!--Todo formulário de coleta de informação e pagamento entrará aqui-->
+            <form>
+                <div class="formularios">
+                    <div class="titulo">
+                        <h1>Compre agora</h1>
+                    </div>
+                    <div class="input"> <!--Grupo da caixa de texto para coleta informação-->
+                        <div class="input-box">
+                            <label for="primeiroNome">Primeiro nome</label>
+                            <input id="primeiroNome" type="text" name="primeiroNome" placeholder="Digite seu primeiro nome">
+                        </div>
+                        <div class="input-box">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input id="sobrenome" type="text" name="sobrenome" placeholder="Digite seu sobrenome">
+                        </div>
+                        <div class="input-box">
+                            <label for="celular">Celular</label>
+                            <input id="celular" type="tel" name="celular" placeholder="(xx) xxxxx-xxxx">
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" placeholder="Digite seu email">
+                        </div>
+                        <div class="input-box">
+                            <label for="senha">Senha</label>
+                            <input id="senha" type="password" name="senha" placeholder="Digite sua senha">
+                        </div>
+                        <div class="input-box">
+                            <label for="senha">Confirme sua senha</label>
+                            <input id="senha" type="password" name="confirme sua senha" placeholder="Confirme sua senha">
+                        </div>
+                 </div>
+                
+        
+                    <div class="inputs-pagamento"> <!--Aqui inicia os novos inputs de forma de pagamento-->
+                        <div class="como-pagar">
+                            <h3>Como pagar:</h3>
+                        </div>
+                        <div class="grupo-pagamento">
+                            <div class="input-pagamento">
+                                <input type="radio" id="pix" name="pix">
+                                <label for="pix">Pix</label>
+                            </div>
+                            <div class="input-pagamento">
+                                <input type="radio" id="boleto" name="boleto">
+                                <label for="boleto">Boleto</label>
+                            </div>
+                            <div class="input-pagamento">
+                                <input type="radio" id="cartao-credito" name="cartao-credito">
+                                <label for="cartao-credito">Cartão de crédito</label>
+                            </div>
+        
+                        </div>
+                    </div>
+                    <div class="botao">
+                        <button><a href="urubuDoPix.html">Continuar</a></button>
+                    </div>
+        
+                </div>
+            </form>
+        </div> 
+    </div>
+    
+</body>
+</html>

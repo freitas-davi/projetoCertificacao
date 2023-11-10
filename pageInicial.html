@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 12px;
+        color:white;
+        padding: 10px;
+        animation-name: animacao;
+        animation-duration: 2s;
+        margin-bottom: 25px;
+    }
+
+    body{
+        color: white;
+        background-image: url(fundoGalo.jpg_large);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .container{
+        display:flex;
+        color: black;
+        justify-content: space-around;
+
+    }
+
+    .jogo-coxa{
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 12px;
+        color:white;
+    }
+
+    .jogo-coxa:hover{
+        transform: scale(1.08);
+        transition: .6s;
+    }
+
+    .jogo-cruzeiro{
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 12px;
+        color:white;
+    }
+
+    .jogo-cruzeiro:hover{
+        transform: scale(1.08);
+        transition: .6s;
+    }
+    
+    .jogo-palmeiras{
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 12px;
+        color:white
+    }
+
+    .jogo-palmeiras:hover{
+        transform: scale(1.08);
+        transition: .6s;
+    }
+
+    @keyframes animacao{
+        from {background-color:white};
+        to {background-color: black};
+
+    }
+
+</style>
+<body>
+    <header>
+        <h2><center>COMPRE SEU INGRESSOS ONLINE</center></h2>
+        <h3><center>Selecione um jogo que queira assistir</center></h3>
+    </header>
+    <main>
+      <div class="container">
+
+        <div class="jogo-coxa">
+            <a href="pagamento.html" target="_self"><img src="galoXcoritiba.jfif" width="500px" height="590px"></a><br>
+            <p><strong><center>Atlético Mineiro x Coritiba, Arena MRV.<br><br>Jogo que acontecerá dia 08/10</center></strong></p>
+            <div class="tabela">
+                <table>
+                    <tr>
+                        <th>Valor dos ingressos</th>
+                    </tr>
+                    <tr>
+                        <th>1 pessoa</th>
+                        <th>R$140</th>
+            
+                    </tr>
+                    <tr>
+                        <th>2 pessoas</th>
+                        <th>R$260</th>
+                    </tr>
+                    <tr>
+                        <th>3 pessoas</th>
+                        <th>R$375</th>
+                    </tr>              
+                </table>
+                
+            </div>
+        </div>
+        <br>
+        <div class="jogo-cruzeiro">
+            <a href="pagamento.html" target="_self"><img src="galoXcruzeiro.jfif" width="500px" height="590px"></a> <br>
+            <p><strong><center>Atlético Mineiro x Cruzeiro, Arena MRV.<br><br>Jogo que acontecerá dia 19/10</center></strong></p>
+            <div class="tabela">
+                <table>
+                    <tr>
+                        <th>Valor dos ingressos</th>
+                    </tr>
+                    <tr>
+                        <th>1 pessoa</th>
+                        <th>R$155</th>
+            
+                    </tr>
+                    <tr>
+                        <th>2 pessoas</th>
+                        <th>R$290</th>
+                    </tr>
+                    <tr>
+                        <th>3 pessoas</th>
+                        <th>R$420</th>
+                    </tr>              
+                </table>
+                
+            </div>
+         </div>
+         <br>
+         <div class="jogo-palmeiras">
+            <a href="pagamento.html" target="_self"><img src="galoXpalmeiras.jfif" width="500px" height="590px"></a><br>
+            <p><strong><center>Palmeiras x Atlético Mineiro, Alianz Arena.<br><br>Jogo que acontecerá dia 22/10</center> </strong></p>
+            <div class="tabela">
+                <table>
+                    <tr>
+                        <th>Valor dos ingressos</th>
+                    </tr>
+                    <tr>
+                        <th>1 pessoa</th>
+                        <th>R$140</th>
+            
+                    </tr>
+                    <tr>
+                        <th>2 pessoas</th>
+                        <th>R$260</th>
+                    </tr>
+                    <tr>
+                        <th>3 pessoas</th>
+                        <th>R$375</th>
+                    </tr>              
+                </table>
+                
+            </div>
+        </div>
+          
+      </div>
+
+    </main>
+
+<br><br>
+    
+</body>
+</html>
